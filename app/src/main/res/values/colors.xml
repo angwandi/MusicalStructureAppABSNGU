@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#282828</color>
+    <color name="colorPrimaryDark">#ff202020</color>
+    <color name="colorAccent">#1DB954</color>
+    <color name="colorBackground">#ff040404</color>
+    <color name="colorAppToolbar">#ff202020</color>
+    <color name="colorPrimaryText">#ffffff</color>
+</resources>
