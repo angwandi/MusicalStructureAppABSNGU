@@ -15,18 +15,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".HomeActivity"
-            android:label="Home" />
-        <activity
-            android:name=".BrowseActivity"
-            android:label="Browse" />
-        <activity
-            android:name=".SearchActivity"
-            android:label="Search" />
-        <activity
-            android:name=".StoreActivity"
-            android:label="Store" />
     </application>
 
 </manifest>
