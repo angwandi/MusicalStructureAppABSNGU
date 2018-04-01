@@ -3,7 +3,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="88dp"
-    android:background="@color/colorAccent"
+    android:background="@color/tan_background"
     android:minHeight="88dp">
 
     <ImageView
@@ -29,29 +29,30 @@
             android:layout_weight="1"
             android:gravity="bottom"
             android:textAppearance="?android:textAppearanceMedium"
-            android:textColor="@android:color/white"
+            android:textColor="@android:color/black"
             android:textStyle="bold"
-            tools:text="Je t'aime" />
+            tools:text="@string/song_title" />
 
         <TextView
-            android:id="@+id/artist_text_view"
+            android:id="@+id/songArtist_text_view"
             android:layout_width="match_parent"
             android:layout_height="44dp"
             android:layout_below="@+id/songTitle_text_view"
             android:layout_weight="1"
             android:gravity="top"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="@android:color/white"
-            tools:text="Fally Ipupa" />
+            android:textColor="@android:color/black"
+            tools:text="@string/song_artist" />
 
         <TextView
+            android:id="@+id/songDuration_text_view"
             android:layout_width="wrap_content"
             android:layout_height="24dp"
             android:layout_alignParentRight="true"
             android:layout_centerVertical="true"
             android:layout_marginRight="16dp"
+            android:text="@string/song_duration"
             android:textAppearance="?android:textAppearanceSmall"
-            android:textColor="@android:color/white"
-            android:text="2:10" />
+            android:textColor="@android:color/black" />
     </RelativeLayout>
 </RelativeLayout>

@@ -49,17 +49,17 @@ public class Song {
      * Get the string resource ID for the
      */
 
-    public int getmSongTitle(){return mSongTitle;}
+    public int getSongTitle(){return mSongTitle;}
 
     /**
      * Get the string resource ID for the
      */
-    public int getmSongArtist(){return mSongArtist;}
+    public int getSongArtist(){return mSongArtist;}
 
     /**
      * Get the string resource ID for the
      */
 
-    public int getmSongDuration(){return  mSongDuration;}
+    public int getSongDuration(){return  mSongDuration;}
 
 }

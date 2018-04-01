@@ -1,6 +1,20 @@
 <resources>
+    <!-- Title for the application. [CHAR LIMIT=12] -->
     <string name="app_name">Musical Structure App</string>
+    <!-- Title for song title. [CHAR LIMIT=12] -->
     <string name="song_title">Na lingi yo</string>
     <string name="song_artist">Fally Ipupa</string>
     <string name="song_duration">2:35</string>
+    <!-- Field name for Songs. [CHAR LIMIT=12] -->
+    <string name="field_songs">Songs</string>
+    <!-- Field name for Albums. [CHAR LIMIT=12] -->
+    <string name="field_albums">Albums</string>
+    <!-- Field name for Artists. [CHAR LIMIT=12] -->
+    <string name="field_artists">Artists</string>
+    <!-- Field name for Store. [CHAR LIMIT=12] -->
+    <string name="field_store">Store</string>
+    <!-- Field name for Search. [CHAR LIMIT=12] -->
+    <string name="field_search">Search</string>
+    <!-- Field name for Now Playing. [CHAR LIMIT=12] -->
+    <string name="field_now_playing">Playing</string>
 </resources>
