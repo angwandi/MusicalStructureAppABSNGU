@@ -40,14 +40,14 @@ public class Album {
     /**
      * Get the string resource ID for the album title
      */
-    public int getmAlbumTitle() {
+    public int getAlbumTitle() {
         return mAlbumTitle;
     }
 
     /**
      * Get the string resource ID for the song Artist
      */
-    public int getmAlbumArtist() {
+    public int getAlbumArtist() {
         return mAlbumArtist;
     }
 

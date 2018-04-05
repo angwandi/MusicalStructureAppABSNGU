@@ -1,6 +1,8 @@
 package com.example.demad.musicalstructureapp;
 
 import android.content.Context;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
 import android.support.v4.content.ContextCompat;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -34,12 +36,13 @@ public class SongAdapter extends ArrayAdapter<Song> {
         mColorResourceId = colorResourceId;
     }
 
+    @Nullable
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
         // Check if an existing view is being reused, otherwise inflate the view
         View listItemView = convertView;
         if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_items, parent, false);
+            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.song_items, parent, false);
         }
         // Get the {@link Song} object located at this position in the list
         Song currentSong = getItem(position);
@@ -48,7 +51,7 @@ public class SongAdapter extends ArrayAdapter<Song> {
         // Get the song title from the currentSong object and set this text on
         // the song title TextView.
         songTitleTextView.setText(currentSong.getSongTitle());
-        //Repetition of same procedures for other element of the list_items
+        //Repetition of same procedures for other element of the song_items
         TextView songArtistTextView = listItemView.findViewById(R.id.songArtist_text_view);
         songArtistTextView.setText(currentSong.getSongArtist());
         TextView songDurationTextView = listItemView.findViewById(R.id.songDuration_text_view);

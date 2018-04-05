@@ -1,41 +1,50 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="88dp"
+    android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:background="@android:color/white"
     android:minHeight="48dp">
 
     <ImageView
         android:id="@+id/album_image"
-        android:layout_width="88dp"
+        android:layout_width="match_parent"
         android:layout_height="88dp"
         android:minHeight="48dp"
-        android:minWidth="48dp"/>
+        android:minWidth="48dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/ic_1280" />
+
+    <ImageButton
+        android:id="@+id/play_imgbtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/album_image"
+        android:layout_alignParentRight="true"
+        android:background="@drawable/ic_play_circle_filled_white_24dp" />
 
     <RelativeLayout
         android:id="@+id/album_text_container"
         android:layout_width="match_parent"
         android:layout_height="48dp"
-        android:orientation="vertical"
-        android:layout_below="@id/album_image">
+        android:layout_below="@id/album_image"
+        android:orientation="vertical">
 
         <TextView
             android:id="@+id/albumTitle_text_view"
             android:layout_width="match_parent"
-            android:layout_height="24dp"
+            android:layout_height="wrap_content"
             android:textAppearance="?android:textAppearanceMedium"
             android:textColor="@android:color/black"
             tools:text="Tokosss" />
 
         <TextView
-            android:layout_below="@id/albumTitle_text_view"
             android:id="@+id/albumArtist_text_view"
             android:layout_width="match_parent"
-            android:layout_height="24dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/albumTitle_text_view"
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="#757575"
             tools:text="@string/song_artist" />
-
     </RelativeLayout>
 </RelativeLayout>

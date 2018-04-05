@@ -22,5 +22,6 @@
     <!-- Text appearance style for a field tab -->
     <style name="FieldTabTextAppearance" parent="TextAppearance.Design.Tab">
         <item name="android:textColor">@android:color/white</item>
+        <item name="android:background">@color/primary_color</item>
     </style>
 </resources>
