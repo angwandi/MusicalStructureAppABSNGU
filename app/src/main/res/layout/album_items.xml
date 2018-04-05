@@ -47,4 +47,8 @@
             android:textColor="#757575"
             tools:text="@string/song_artist" />
     </RelativeLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground" />
 </RelativeLayout>

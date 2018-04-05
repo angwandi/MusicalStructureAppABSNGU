@@ -32,4 +32,8 @@
         android:textAppearance="?android:textAppearanceMedium"
         android:textColor="@android:color/black"
         tools:text="@string/song_artist" />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?android:attr/selectableItemBackground" />
 </RelativeLayout>

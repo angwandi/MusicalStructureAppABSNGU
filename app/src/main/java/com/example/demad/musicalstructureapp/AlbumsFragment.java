@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.GridView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -47,9 +49,17 @@ public class AlbumsFragment extends Fragment {
         albums.add(new Album(R.string.album_title,R.string.album_artist,R.drawable.ic_1280));
         albums.add(new Album(R.string.album_title,R.string.album_artist,R.drawable.ic_music_note_black_48dp));
 
-        AlbumAdapter adapter = new AlbumAdapter(getActivity(), albums, R.color.field_albums);
-        GridView gridView = rootView.findViewById(R.id.gridview);
+        final AlbumAdapter adapter = new AlbumAdapter(getActivity(), albums, R.color.field_albums);
+        final GridView gridView = rootView.findViewById(R.id.album_gridview);
         gridView.setAdapter(adapter);
+        gridView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+              Toast.makeText(getActivity(),"Click",Toast.LENGTH_LONG).show();
+            }
+        });
+
+        gridView.setDrawSelectorOnTop(true);
         return rootView;
     }
 }

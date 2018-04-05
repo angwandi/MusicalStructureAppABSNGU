@@ -5,7 +5,9 @@ import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -50,7 +52,6 @@ public class SongsFragment extends Fragment {
         songs.add(new Song(R.string.song_title, R.string.song_artist, R.string.song_duration));
         songs.add(new Song(R.string.song_title, R.string.song_artist, R.string.song_duration));
         songs.add(new Song(R.string.song_title, R.string.song_artist, R.string.song_duration));
-
         // Create an {@link SongAdapter}, whose data source is a list of {@link Song}s. The
         // adapter knows how to create list items for each item in the list.
         SongAdapter adapter = new SongAdapter(getActivity(), songs, R.color.field_songs);
@@ -61,6 +62,14 @@ public class SongsFragment extends Fragment {
         // Make the {@link ListView} use the {@link SongAdapter} we created above, so that the
         // {@link ListView} will display list items for each {@link Word} in the list.
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Toast.makeText(getActivity(), "Will play after the next Update!", Toast.LENGTH_LONG).show();
+            }
+        });
+        //For the pressed states on the list item view
+        listView.setDrawSelectorOnTop(true);
         return rootView;
     }
 }
