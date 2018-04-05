@@ -45,21 +45,40 @@ public class Song {
         mSongArtist = songArtist;
         mSongDuration = songDuration;
     }
+    public Song(int songTitle, int songArtist, int imageResourceId, int songDuration){
+        mSongTitle = songTitle;
+        mSongArtist = songArtist;
+        mSongDuration = songDuration;
+        mImageResourceId = imageResourceId;
+    }
     /**
-     * Get the string resource ID for the
+     * Get the string resource ID for the song title
      */
 
     public int getSongTitle(){return mSongTitle;}
 
     /**
-     * Get the string resource ID for the
+     * Get the string resource ID for the song Artist
      */
     public int getSongArtist(){return mSongArtist;}
 
     /**
-     * Get the string resource ID for the
+     * Get the string resource ID for the song duration
      */
-
     public int getSongDuration(){return  mSongDuration;}
+
+    /**
+     * Returns whether or not there is an image for this song.
+     */
+    public boolean hasImage() {
+        return mImageResourceId != NO_IMAGE_PROVIDED;
+    }
+
+    /**
+     * Return the image resource ID of the song.
+     */
+    public int getImageResourceId() {
+        return mImageResourceId;
+    }
 
 }
