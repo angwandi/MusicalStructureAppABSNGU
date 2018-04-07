@@ -14,6 +14,9 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
+//Same description as of Song Adapter, Fragment and class  for reference
+
+
 public class AlbumAdapter extends ArrayAdapter<Album> {
     private int mColorResourceId;
 
@@ -25,7 +28,6 @@ public class AlbumAdapter extends ArrayAdapter<Album> {
     @Nullable
     @Override
     public View getView(int position, View convertView, ViewGroup parent) {
-        // Check if an existing view is being reused, otherwise inflate the view
         View gridItemView = convertView;
         if (gridItemView == null) {
             gridItemView = LayoutInflater.from(getContext()).inflate(R.layout.album_items, parent, false);

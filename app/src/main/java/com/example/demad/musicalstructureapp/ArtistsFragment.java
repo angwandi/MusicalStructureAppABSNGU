@@ -10,6 +10,7 @@ import android.widget.GridView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
+//Same description as of Song Adapter, Fragment and class  for reference
 
 public class ArtistsFragment extends Fragment {
     public ArtistsFragment() {

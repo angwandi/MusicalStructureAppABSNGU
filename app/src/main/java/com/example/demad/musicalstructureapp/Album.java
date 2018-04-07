@@ -24,7 +24,7 @@ public class Album {
     private static final int NO_IMAGE_PROVIDED = -1;
 
     /**
-     * Create a new Song object
+     * Create a new Album object
      *
      * @param albumTitle      is the string resource ID for the album title
      *                        <p>
@@ -45,7 +45,7 @@ public class Album {
     }
 
     /**
-     * Get the string resource ID for the song Artist
+     * Get the string resource ID for the Album Artist
      */
     public int getAlbumArtist() {
         return mAlbumArtist;

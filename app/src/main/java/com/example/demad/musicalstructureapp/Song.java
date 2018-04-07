@@ -21,10 +21,6 @@ public class Song {
     private int mSongDuration;
 
     /**
-     * Audio resource ID for the song
-     */
-    private int mAudioResourceId;
-    /**
      * Image resource ID for the song
      */
     private int mImageResourceId = NO_IMAGE_PROVIDED;
