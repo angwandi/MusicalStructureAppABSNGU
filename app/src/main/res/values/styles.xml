@@ -11,7 +11,7 @@
         <!-- Remove the shadow below the app bar -->
         <item name="elevation">0dp</item>
     </style>
-    <!-- Style for a tab that displays a field name -->
+     Style for a tab that displays a field name
     <style name="FieldTab" parent="Widget.Design.TabLayout">
         <item name="tabIndicatorColor">@android:color/white</item>
         <item name="tabSelectedTextColor">@android:color/white</item>

@@ -21,4 +21,9 @@
     <string name="album_title">Tokosss</string>
     <string name="album_artist">Fally Ipupa</string>
     <string name="album_duration">2 hours</string>
+    <!--Stores-->
+    <string name="store_spotify">Shop Musics on Spotify</string>
+    <string name="store_amazon">Shop Musics on Amazon Music</string>
+    <string name="store_google">Shop Musics on Google Play Music</string>
+    <string name="store_itunes">Shop Musics on iTunes</string>
 </resources>

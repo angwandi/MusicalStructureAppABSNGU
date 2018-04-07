@@ -19,7 +19,7 @@
     <color name="field_albums">@android:color/white</color>
 
     <!-- Background color for the store field -->
-    <color name="field_store">#bdbdbd</color>
+    <color name="field_store">@android:color/white</color>
 
     <!-- Background color for the search field -->
     <color name="field_search">#bdbdbd</color>
