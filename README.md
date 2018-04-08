@@ -35,7 +35,7 @@ This project is about combining various ideas and skills we’ve been practicing
 *Note:* As the focus of this program is Java, only projects completed with Java as the source code will be accepted.
 Projects using Kotlin as the source code will not be accepted. 
 
-### Finished Poject screenshots : Reviewed and Passed by Udacity  07/04/2018
+### Finished Poject screenshots : Reviewed and Passed by Udacity  07/04/2018.
 
 
 ![screenshot_1523191406](https://user-images.githubusercontent.com/31923567/38467636-a92393f6-3b33-11e8-8024-9ac117d86dd2.png)
