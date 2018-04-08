@@ -50,7 +50,6 @@ public class ArtistsFragment extends Fragment {
                 Toast.makeText(getActivity(), "Click", Toast.LENGTH_SHORT).show();
             }
         });
-        gridView.setDrawSelectorOnTop(true);
         return rootView;
     }
 }

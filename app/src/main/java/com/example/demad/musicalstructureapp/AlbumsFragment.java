@@ -48,7 +48,6 @@ public class AlbumsFragment extends Fragment {
                 Toast.makeText(getActivity(), "Click", Toast.LENGTH_LONG).show();
             }
         });
-        gridView.setDrawSelectorOnTop(true);
         return rootView;
     }
 }
