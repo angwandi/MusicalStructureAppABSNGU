@@ -4,16 +4,17 @@
     android:id="@+id/artist_text_container"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:minHeight="48dp">
+    android:minHeight="@dimen/_48dp">
     
     <ImageView
         android:id="@+id/artist_image"
         android:layout_width="match_parent"
-        android:layout_height="88dp"
-        android:minHeight="48dp"
-        android:minWidth="48dp"
+        android:layout_height="@dimen/_88dp"
+        android:minHeight="@dimen/_48dp"
+        android:minWidth="@dimen/_48dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/ic_1280" />
+        android:src="@drawable/ic_1280"
+        android:contentDescription="@string/app_name"/>
     <ImageButton
         android:id="@+id/play_imgbtn"
         android:layout_width="wrap_content"

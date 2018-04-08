@@ -26,4 +26,9 @@
     <string name="store_amazon">Shop Musics on Amazon Music</string>
     <string name="store_google">Shop Musics on Google Play Music</string>
     <string name="store_itunes">Shop Musics on iTunes</string>
+    <!--Content Descriptions-->
+    <string name="play_image_button">Play</string>
+    <string name="skip_previous_image_button">Skip previous</string>
+    <string name="skip_forward_image_button">Skip forward</string>
+    <string name="online_store">Online stores</string>
 </resources>

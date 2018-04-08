@@ -9,7 +9,7 @@
     <!-- App bar style -->
     <style name="MusicalStructureAppAppBarStyle" parent="Widget.AppCompat.Light.ActionBar.Solid.Inverse">
         <!-- Remove the shadow below the app bar -->
-        <item name="elevation">0dp</item>
+        <item name="elevation">@dimen/_0dp</item>
     </style>
      Style for a tab that displays a field name
     <style name="FieldTab" parent="Widget.Design.TabLayout">

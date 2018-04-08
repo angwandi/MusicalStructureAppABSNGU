@@ -3,16 +3,17 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="horizontal"
-    android:padding="36dp"
+    android:padding="@dimen/_36dp"
     android:id="@+id/text_container">
     <ImageView
         android:scaleType="centerCrop"
         android:id="@+id/store_image"
-        android:layout_width="88dp"
-        android:layout_height="88dp"
-        android:src="@drawable/spotify"/>
+        android:layout_width="@dimen/_88dp"
+        android:layout_height="@dimen/_88dp"
+        android:src="@drawable/spotify"
+        android:contentDescription="@string/online_store"/>
     <TextView
-        android:padding="16dp"
+        android:padding="@dimen/_16dp"
         android:id="@+id/storeName_text_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

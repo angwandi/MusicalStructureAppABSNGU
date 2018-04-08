@@ -2,18 +2,19 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="48dp"
+    android:layout_height="@dimen/_48dp"
     android:background="@android:color/white"
-    android:minHeight="48dp">
+    android:minHeight="@dimen/_48dp">
 
     <ImageView
         android:scaleType="centerCrop"
         android:id="@+id/image"
-        android:layout_width="48dp"
-        android:layout_height="48dp"
-        android:minHeight="48dp"
-        android:minWidth="48dp"
-        android:paddingRight="16dp"
+        android:layout_width="@dimen/_48dp"
+        android:layout_height="@dimen/_48dp"
+        android:minHeight="@dimen/_48dp"
+        android:minWidth="@dimen/_48dp"
+        android:paddingRight="@dimen/_16dp"
+        android:paddingLeft="@dimen/_16dp"
         android:src="@drawable/maitre"/>
 
     <RelativeLayout
@@ -22,14 +23,16 @@
         android:layout_height="48dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
         android:layout_alignParentTop="true"
         android:layout_toRightOf="@id/image"
+        android:layout_toEndOf="@id/image"
         android:orientation="vertical">
 
         <TextView
             android:id="@+id/songTitle_text_view"
             android:layout_width="match_parent"
-            android:layout_height="24dp"
+            android:layout_height="@dimen/_24dp"
             android:layout_weight="1"
             android:gravity="bottom"
             android:textAppearance="?android:textAppearanceMedium"
@@ -39,7 +42,7 @@
         <TextView
             android:id="@+id/songArtist_text_view"
             android:layout_width="match_parent"
-            android:layout_height="24dp"
+            android:layout_height="@dimen/_24dp"
             android:layout_below="@+id/songTitle_text_view"
             android:layout_weight="1"
             android:gravity="top"
@@ -50,10 +53,12 @@
         <TextView
             android:id="@+id/songDuration_text_view"
             android:layout_width="wrap_content"
-            android:layout_height="24dp"
+            android:layout_height="@dimen/_24dp"
             android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
             android:layout_centerVertical="true"
-            android:layout_marginRight="16dp"
+            android:layout_marginRight="@dimen/_16dp"
+            android:layout_marginEnd="@dimen/_16dp"
             android:text="@string/song_duration"
             android:textAppearance="?android:textAppearanceSmall"
             android:textColor="@android:color/black" />

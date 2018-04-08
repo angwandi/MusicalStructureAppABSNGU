@@ -10,20 +10,5 @@
         android:queryHint="Search Songs and Artists"
         android:iconifiedByDefault="false"
         android:layout_centerInParent="true"/>
-    <!--<ImageView-->
-        <!--android:scaleType="center"-->
-        <!--android:layout_width="match_parent"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="4"-->
-        <!--android:src="@drawable/ic_search_black_48dp"-->
-        <!--android:layout_gravity="center"/>-->
-    <!--<Button-->
-        <!--android:id="@+id/search_btn"-->
-        <!--android:layout_width="wrap_content"-->
-        <!--android:layout_height="0dp"-->
-        <!--android:layout_weight="1"-->
-        <!--android:text="Search"-->
-        <!--android:textAllCaps="false"-->
-        <!--android:layout_gravity="center"/>-->
 </RelativeLayout>
 
